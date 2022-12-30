@@ -1,16 +1,56 @@
-# onboarding_screen
+# job_finder_ui
 
-Onboarding Screen
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Modern UI for Job finders and hiring companies.
 
-A few resources to get you started if this is your first Flutter project:
+### Folder Structure
+Here is the core folder structure which flutter provides.
+<code>
+flutter-app/
+ |- android
+ |- build
+ |- ios
+ |- lib
+ |- test
+ </code>
+ 
+ Here is the folder structure I used in this project
+<code> 
+lib/
+|- images/
+|- screens/
+|- screens/views
+|- screens/views/featured.dart
+|- screens/views/onboarding_screen.dart
+|- screens/views/recent_jobs.dart
+|- screens/views/sub_cat.dart
+|- screens/views/sub_tabs.dart
+|- main.dart</code>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Main
+<code>import 'package:flutter/material.dart';
+import 'package:onboarding_screen/screens/views/onboarding_screen.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: OnBoardingScreen(),
+    );
+  } }</code>
+
+
+#### UI 
+<img src="https://user-images.githubusercontent.com/120676400/210115045-db96ab4f-4e53-45fc-86db-1cb1c807221e.png" width="360" height="780">
+
+<img src="https://user-images.githubusercontent.com/120676400/210115085-524c8386-af70-46d5-a0a3-7902fa417476.png" width="360" height="780">
